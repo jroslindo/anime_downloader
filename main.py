@@ -5,10 +5,6 @@ import os
 import threading
 import urllib.request
 
-
-
-
-
 def procura_anime (nome):
 
     html= requests.get("https://goyabu.com/?s="+ nome).text
@@ -58,12 +54,15 @@ def THREADS (link, numero,anime):
 
     comando = '''powershell -Command "Invoke-WebRequest -Uri '''+link +''' -OutFile htmls\\''' + str(numero) +'''.html'''
     os.system(comando)
+    try:
+        arq = open("htmls\\"+str(numero)+".html", "r", encoding="utf8")
+        leitura = arq.read().encode("UTF-8")
+        arq.close()
+    except erro:
+        print(erro)
+    
 
-    arq = open("htmls\\"+str(numero)+".html")
-    leitura = arq.read()    
-    arq.close()
-
-    leitura = leitura.replace("\n","")
+    leitura = str(leitura).replace("\n","")
     # link = re.findall('''{type: "video\/mp4", label: "SD", file: "(.*?)"''', leitura)
     link = re.findall('''file: "(.*?)"},],type: "video\/mp4"''', leitura)
     link = str(link[0])
@@ -106,8 +105,7 @@ def main (anime):
     lista_animes_encontrados = procura_anime(anime)
     anime_escolhido          = seleciona_anime(lista_animes_encontrados)
     links_downloads          = pagina_anime(anime_escolhido)
-    instanciar_threads(links_downloads, anime)
-    # print(links_downloads)
+    instanciar_threads(links_downloads, anime_escolhido[1])
    
 
 
