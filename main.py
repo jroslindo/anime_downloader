@@ -5,10 +5,6 @@ import os
 import threading
 import urllib.request
 
-
-
-
-
 def procura_anime (nome):
 
     html= requests.get("https://goyabu.com/?s="+ nome).text
