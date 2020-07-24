@@ -1,0 +1,6 @@
+file: "https://pitou.goyabu.com/re-zero-kara-hajimeru-isekai-seikatsu/14.mp4"},],type: "video/mp4"
+
+
+
+
+{type: "video/mp4", label: "SD", file: "https://r3---sn-p5qlsnsr.googlevideo.com/videoplayback?expire=1595584353&ei=4T4aX7z2E8a6hgbcgragBQ&ip=2607:5300:60:7317::&id=dc886db8ea1ea622&itag=18&source=blogger&mh=uX&mm=31&mn=sn-p5qlsnsr&ms=au&mv=m&mvi=3&pl=32&susc=bl&mime=video/mp4&dur=1516.193&lmt=1542075591835721&mt=1595555487&sparams=expire,ei,ip,id,itag,source,susc,mime,dur,lmt&sig=AOq0QJ8wRAIgcUl-DHeyvs8yVul9z15DZps7jz3aEyEfFiNA_hy_wYgCIF6rIRDmN2WoKcDQC4UQQfjEZCX8EC_gKNnvCjKk736_&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAKfUhuJHmR40JtkEIhl9JWnG1-g7ZDl208nN6dY2pwzdAiBPzkWpRINNZkkfwgUG-0VcEgzn7avn8dPPtOYORFkxqQ%3D%3D"},],type: "video/mp4"
